@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doroshenko A.D.</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<body style="background: #fffff">
+<div class="header" style="background: #aae2b1">
+    <div class="parent" style="background: #ffffd">
+        <div class="child" align="left">
+            <a href="/" class="btn btn-success btn-lg">Main</a>
+            <a href="/blog" class="btn btn-primary btn-lg">Blog &raquo;</a>
+            <a href="/cv_template" class="btn btn-primary btn-lg">CV &raquo;</a>
+            <div class="child" align="right">
+                <a><img src="{% static 'images/sit-logo.png' %}"></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div class="container" style="background: #83d48e">
+
+          {% block content %}
+
+          {% endblock %}
+
+</div>
+
+</body>
+<footer>
+    <div class="container">
+        <hr>
+          <div class="parent">
+            <div class="child">
+                <p align="left">&copy; All rights reserved 2019</p>
+                <a href="mailto:doroshenkoaldm@gmail.com"><img src="{% static 'images/icons8-mailbox-64.png' %}" align="centr"></a>
+                <a href="https://www.linkedin.com/in/alexander-doroshenko-3a426a134/"><img src="{% static 'images/icons8-linkedin-64.png' %}" align="centr"></a>
+                <a href="skype:live:68bb9144f3de2b4c?call"><img src="{% static 'images/icons8-skype-64.png' %}" align="centr"></a>
+                <a href="callto://+380732278221"><img src="{% static 'images/icons8-telegram-app-64.png' %}" align="centr"></a>
+                <a href="https://www.djangoproject.com/" align="right">Powered by Django</a>
+            </div>
+          </div>
+    </div>
+
+</footer>
+</html>
