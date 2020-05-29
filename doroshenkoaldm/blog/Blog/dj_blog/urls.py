@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.shortcuts import render, get_object_or_404
 
-from posts.models import Post
+from ..posts.models import Post
 
 
 def render_post(request, slug):

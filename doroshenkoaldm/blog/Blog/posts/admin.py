@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.conf import settings
 
-from gdrive import api
+from blog.Blog.gdrive import api
 
 from .models import Post
 

@@ -16,9 +16,11 @@ Including another URLconf
 from . import views
 from django.conf.urls import url, include
 from django.urls import path
+from django.views.generic import TemplateView
+
 
 urlpatterns = [
-    url(r'^', views.index, name='indexu'),
-    path('', views.index, name='indexp'),
-    path('cv_template', include('Website.urls'))
+    path('', views.index, name='index'),
+    path('blog/', views.blog, name='blog'),
+    url('robots\.txt', TemplateView.as_view(template_name="mainApp/robots.txt", content_type="text/plain")),
 ]
