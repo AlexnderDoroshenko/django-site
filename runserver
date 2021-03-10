@@ -1,0 +1,11 @@
+#!/bin/bash
+cwd="$(pwd)"
+echo $cwd
+cd $(pwd)
+ls -a
+cd .site-env/bin
+ls -a
+source activate
+cd ../doroshenkoaldm
+ls -a
+exec python3 /doroshenkoaldm/manage.py runserver 192.168.2.3:2021
