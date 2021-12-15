@@ -3,3 +3,4 @@
 doroshenkoaldm/doroshenkoaldm/settings.py
 __pycache__/*
 .git
+venv/**
